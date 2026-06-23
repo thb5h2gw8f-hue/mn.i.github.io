@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>My Character</title>
@@ -10,6 +11,7 @@
   box-sizing: border-box;
 }
 
+
 body {
 
   margin:0;
@@ -17,7 +19,7 @@ body {
 
   background:#ffd6e7;
 
-  font-family:Arial;
+  font-family:Arial, sans-serif;
 
   display:flex;
   flex-direction:column;
@@ -26,11 +28,11 @@ body {
 
 
 
-/* HEADER */
+/* PHẦN TRÊN */
 
 .header {
 
-  height:250px;
+  height:180px;
 
   background:#fff0f7;
 
@@ -38,11 +40,11 @@ body {
 
   align-items:center;
 
-  gap:40px;
+  gap:30px;
 
-  padding:40px;
+  padding:25px;
 
-  border-bottom:4px solid #e8b8cc;
+  border-bottom:3px solid #e8b8cc;
 
 }
 
@@ -50,12 +52,14 @@ body {
 
 .avatar {
 
-  width:180px;
-  height:180px;
+  width:120px;
+  height:120px;
 
   border-radius:50%;
 
   background:#aaa;
+
+  flex-shrink:0;
 
 }
 
@@ -63,46 +67,55 @@ body {
 
 .header b {
 
-  font-size:60px;
+  font-size:42px;
 
 }
+
 
 
 .header span {
 
-  font-size:35px;
+  font-size:25px;
+
+  color:#666;
 
 }
 
 
 
-/* CHAT */
+/* KHUNG CHAT */
+
 
 .chat {
 
   flex:1;
 
-  padding:40px;
+  padding:25px;
 
-  overflow:auto;
+  overflow-y:auto;
 
 }
 
+
+
+/* TIN NHẮN */
 
 
 .char {
 
   background:white;
 
-  max-width:80%;
+  max-width:75%;
 
-  padding:35px;
+  width:fit-content;
 
-  margin:30px 0;
+  padding:25px;
 
-  border-radius:50px;
+  margin:20px 0;
 
-  font-size:45px;
+  border-radius:35px;
+
+  font-size:30px;
 
 }
 
@@ -112,32 +125,36 @@ body {
 
   background:#ff91c7;
 
-  max-width:80%;
+  max-width:75%;
 
-  padding:35px;
+  width:fit-content;
 
-  margin:30px 0 30px auto;
+  padding:25px;
 
-  border-radius:50px;
+  margin:20px 0 20px auto;
 
-  font-size:45px;
+  border-radius:35px;
+
+  font-size:30px;
 
 }
 
 
 
-/* INPUT */
+/* THANH NHẬP */
 
 
 .input {
 
   background:white;
 
-  padding:35px;
+  padding:25px;
 
   display:flex;
 
-  gap:25px;
+  gap:20px;
+
+  border-top:2px solid #ddd;
 
 }
 
@@ -147,13 +164,13 @@ input {
 
   flex:1;
 
-  font-size:45px;
+  font-size:30px;
 
-  padding:35px;
+  padding:25px;
 
-  border-radius:60px;
+  border-radius:45px;
 
-  border:3px solid #ccc;
+  border:2px solid #ccc;
 
 }
 
@@ -161,17 +178,18 @@ input {
 
 button {
 
-  font-size:45px;
+  font-size:30px;
 
-  padding:35px 50px;
+  padding:25px 40px;
 
   border:none;
 
-  border-radius:60px;
+  border-radius:45px;
 
   background:#ff7fba;
 
 }
+
 
 
 </style>
@@ -180,12 +198,16 @@ button {
 </head>
 
 
+
 <body>
+
 
 
 <div class="header">
 
+
 <div class="avatar"></div>
+
 
 <div>
 
@@ -195,13 +217,18 @@ button {
 
 <span>AI Character</span>
 
-</div>
 
 </div>
+
+
+</div>
+
+
 
 
 
 <div class="chat">
+
 
 
 <div class="char">
@@ -211,6 +238,7 @@ Xin chào, tôi là Luna. Rất vui được gặp bạn.
 </div>
 
 
+
 <div class="user">
 
 Hello!
@@ -218,17 +246,25 @@ Hello!
 </div>
 
 
+
 </div>
+
+
 
 
 
 <div class="input">
 
+
 <input placeholder="Nhắn tin...">
+
 
 <button>Gửi</button>
 
+
 </div>
+
+
 
 
 </body>
