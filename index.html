@@ -6,152 +6,169 @@
 
 <style>
 
-:root {
-  --pink: #ffd6e7;
-  --light-pink: #fff0f7;
-  --white: #ffffff;
-  --gray: #ddd;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: var(--pink);
+  background: #ffd6e7;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 
-/* thanh nhân vật */
+/* THANH NHÂN VẬT */
 
 .header {
-  height: 85px;
-  background: var(--light-pink);
+
+  height: 150px;
+  background: #fff0f7;
+
   display: flex;
   align-items: center;
-  padding: 12px;
-  gap: 15px;
-  border-bottom: 1px solid #ccc;
+
+  padding: 20px;
+  gap: 20px;
+
+  border-bottom: 2px solid #e8b8cc;
+
 }
 
 
 .avatar {
 
-  width: 65px;
-  height: 65px;
+  width: 100px;
+  height: 100px;
 
   border-radius: 50%;
+
   background: #aaa;
 
 }
 
 
-/* tên */
+/* TÊN */
 
 .header b {
 
-  font-size: 22px;
+  font-size: 32px;
 
 }
 
 
 .header span {
 
-  font-size: 15px;
+  font-size: 20px;
+  color: #666;
 
 }
 
 
-/* khung chat */
+
+/* CHAT */
 
 .chat {
 
   flex: 1;
-  padding: 15px;
+
+  padding: 20px;
+
   overflow-y: auto;
 
 }
 
 
-/* tin nhắn char */
+
+/* BÓNG CHAT */
 
 .char {
 
   background: white;
+
+  max-width: 75%;
+
   width: fit-content;
-  max-width: 70%;
 
-  padding: 12px;
-  margin: 10px;
+  padding: 18px;
 
-  border-radius: 15px;
+  margin: 15px 0;
 
-  font-size: 16px;
+  border-radius: 25px;
+
+  font-size: 22px;
 
 }
 
 
-/* tin nhắn user */
 
 .user {
 
-  background: #ff9dcc;
+  background: #ff91c7;
+
+  max-width: 75%;
 
   width: fit-content;
-  max-width: 70%;
 
-  padding: 12px;
-  margin: 10px 10px 10px auto;
+  padding: 18px;
 
-  border-radius: 15px;
+  margin: 15px 0 15px auto;
 
-  font-size: 16px;
+  border-radius: 25px;
+
+  font-size: 22px;
 
 }
 
 
-/* ô nhập */
+
+/* NHẬP TIN */
 
 .input {
 
   background: white;
-  padding: 12px;
+
+  padding: 20px;
 
   display: flex;
-  gap: 10px;
 
-  border-top: 1px solid #ccc;
+  gap: 15px;
+
+  border-top: 2px solid #ddd;
 
 }
+
 
 
 input {
 
   flex: 1;
 
-  padding: 12px;
+  padding: 18px;
 
-  font-size: 16px;
+  font-size: 22px;
 
-  border-radius: 20px;
+  border-radius: 30px;
 
   border: 1px solid #ccc;
 
 }
 
 
+
 button {
 
-  padding: 12px 20px;
+  padding: 18px 30px;
+
+  font-size: 22px;
 
   border: none;
 
-  border-radius: 20px;
+  border-radius: 30px;
 
-  background: #ff8fc7;
-
-  font-size: 16px;
+  background: #ff7fba;
 
 }
 
@@ -203,7 +220,6 @@ Hello!
 
 
 
-
 <div class="input">
 
 <input placeholder="Nhắn tin...">
@@ -213,6 +229,6 @@ Hello!
 </div>
 
 
-</body>
 
+</body>
 </html>
