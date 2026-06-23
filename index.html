@@ -1,111 +1,218 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>My Character</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #ffd6e7;
+
+:root {
+  --pink: #ffd6e7;
+  --light-pink: #fff0f7;
+  --white: #ffffff;
+  --gray: #ddd;
 }
 
-.header b {
-  font-size: 24px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--pink);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-  height: 100px;
-  padding: 15px;
-  background: white;
+
+
+/* thanh nhân vật */
+
+.header {
+  height: 85px;
+  background: var(--light-pink);
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 12px;
   gap: 15px;
   border-bottom: 1px solid #ccc;
 }
 
+
 .avatar {
-  width: 80px;
-  height: 80px;
+
+  width: 65px;
+  height: 65px;
+
   border-radius: 50%;
+  background: #aaa;
+
 }
+
+
+/* tên */
+
+.header b {
+
+  font-size: 22px;
+
+}
+
+
+.header span {
+
+  font-size: 15px;
+
+}
+
+
+/* khung chat */
 
 .chat {
-  height: 70vh;
+
+  flex: 1;
   padding: 15px;
   overflow-y: auto;
+
 }
+
+
+/* tin nhắn char */
 
 .char {
+
   background: white;
-  padding: 10px;
-  border-radius: 15px;
   width: fit-content;
   max-width: 70%;
+
+  padding: 12px;
   margin: 10px;
+
+  border-radius: 15px;
+
+  font-size: 16px;
+
 }
+
+
+/* tin nhắn user */
 
 .user {
-  background: #ddd;
-  padding: 10px;
-  border-radius: 15px;
+
+  background: #ff9dcc;
+
   width: fit-content;
   max-width: 70%;
+
+  padding: 12px;
   margin: 10px 10px 10px auto;
+
+  border-radius: 15px;
+
+  font-size: 16px;
+
 }
+
+
+/* ô nhập */
 
 .input {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+
   background: white;
-  padding: 10px;
+  padding: 12px;
+
+  display: flex;
+  gap: 10px;
+
+  border-top: 1px solid #ccc;
+
 }
+
 
 input {
-  width: 75%;
-  padding: 15px;
-  font-size: 18px;
+
+  flex: 1;
+
+  padding: 12px;
+
+  font-size: 16px;
+
   border-radius: 20px;
+
+  border: 1px solid #ccc;
+
 }
 
+
 button {
-  padding: 15px 20px;
-  font-size: 18px;
+
+  padding: 12px 20px;
+
+  border: none;
+
   border-radius: 20px;
+
+  background: #ff8fc7;
+
+  font-size: 16px;
+
 }
+
+
 </style>
 
 </head>
 
+
 <body>
 
+
 <div class="header">
+
 <div class="avatar"></div>
+
 <div>
-<b>Tên nhân vật</b><br>
+
+<b>Luna</b>
+
+<br>
+
 <span>AI Character</span>
+
 </div>
+
 </div>
+
 
 
 <div class="chat">
 
+
 <div class="char">
-Xin chào, tôi là nhân vật của bạn.
+
+Xin chào, tôi là Luna. Rất vui được gặp bạn.
+
 </div>
+
 
 <div class="user">
+
 Hello!
-</div>
 
 </div>
+
+
+</div>
+
+
 
 
 <div class="input">
+
 <input placeholder="Nhắn tin...">
+
 <button>Gửi</button>
+
 </div>
 
 
 </body>
+
 </html>
